@@ -17,7 +17,9 @@ In the spirit of Sankofa, we want to show how women’s education is impacted by
 
 
 ## Technology Used
-Our Mapplication
+Our Mapplication uses web-based tools to both collect and display direct user data via a Google Form survey. To create the website we used HTML, CSS and Javascript which allowed us to livestream our website and add unique features. With this, not only will responses be updated securely and automatically, but the data will always be displayed on a map. 
+
+This map was created using MapLibre in which we are able to visualize each submission as a marker which will allow users and visitors to geogrpahically see where their responses display. Because we have location based questions, all visitors can see exactly what school the user attended last and visualize how they were brought to CSULA, each marker will have a corresponding pop-up with their own user story. 
 
 ## Features 
 
