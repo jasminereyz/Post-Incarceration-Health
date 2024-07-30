@@ -1,7 +1,16 @@
 # Plotting The Educational Paths of Formerly Incarcerated Women at Project Rebound
 AA191 Final!!
 
-## Table of Contents 
+## Table of Contents   
+[General Information](https://github.com/jasminereyz/Post-Incarceration-Health/edit/main/README.md)
+
+[Empowered Voices](https://github.com/jasminereyz/Post-Incarceration-Health/edit/main/README.md)
+
+[Technology](https://github.com/jasminereyz/Post-Incarceration-Health/edit/main/README.md)
+
+[Room for Improvements!](https://github.com/jasminereyz/Post-Incarceration-Health/edit/main/README.md)
+
+[Acknowledgements](https://github.com/jasminereyz/Post-Incarceration-Health/edit/main/README.md)
 
 
 ## General Information 
@@ -44,12 +53,14 @@ To-Do:
 
 
 ## Acknowledgements 
+Thank you so much to Project Rebound for entrusting us with your stories, we truly hope to have captured exactly what was envisioned and will continue to strive to empower the voices of those who are silenced. 
+
+Thank you Albert for allowing us to stay true to our passion,
+
+Thank you AA191 for being there with us every step of the way!
 
 
 
-
-## Social Problem
-The social problem that we are addressing is mass incarceration, which is often referred to as the "new Jim Crow" and is notoriously seeped in corruption sown from the for-profit prison industrial complex. Because of these circumstances, we hope to empower the voices of previously incarcerated individuals. Although we had some ideas of which issues we could address, we would like to speak directly with community members to guide the direction we take this project. So far, we have contacted two non-profits called Friends of Los Angeles (FOLA) and Fa'atasiga o Uso; we intend to reach out to additional organizations such as the Prisoner Reentry Network, Project Rebound, and Root & Rebound.
 
 
  
