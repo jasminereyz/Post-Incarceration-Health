@@ -1,5 +1,5 @@
-# Plotting The Educational Paths of Formerly Incarcerated Women at Project Rebound
-AA191 Final!!
+# Project Sankofa-Cation
+Plotting the Educational Pathways of Formerly Incarcerated Individuals at CSULA's Project Rebound 
 
 ## Table of Contents   
 [General Information](https://github.com/jasminereyz/Post-Incarceration-Health/edit/main/README.md)
