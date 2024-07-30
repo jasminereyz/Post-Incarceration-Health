@@ -2,7 +2,7 @@
 Plotting the Educational Pathways of Formerly Incarcerated Women at CSULA's Project Rebound 
 
 ## Table of Contents   
-[General Information](https://github.com/jasminereyz/Post-Incarceration-Health/edit/main/README.md)
+[General Information](https://github.com/jasminereyz/Post-Incarceration-Health/tree/main?tab=readme-ov-file#general-information)
 
 [Empowered Voices](https://github.com/jasminereyz/Post-Incarceration-Health/edit/main/README.md)
 
