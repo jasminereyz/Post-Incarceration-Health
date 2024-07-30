@@ -9,7 +9,7 @@ Plotting the Educational Pathways of Formerly Incarcerated Women at CSULA's Proj
 [Technology](https://github.com/jasminereyz/Post-Incarceration-Health/tree/main?tab=readme-ov-file#technology-used)
 - [Features](https://github.com/jasminereyz/Post-Incarceration-Health/tree/main?tab=readme-ov-file#features)
 - [Screenshots](https://github.com/jasminereyz/Post-Incarceration-Health/tree/main?tab=readme-ov-file#screenshots)
-- [Usage](
+- [Setup](https://github.com/jasminereyz/Post-Incarceration-Health/blob/main/README.md#setup)
 
 [Room for Improvements!](https://github.com/jasminereyz/Post-Incarceration-Health/tree/main?tab=readme-ov-file#room-for-improvement)
 
