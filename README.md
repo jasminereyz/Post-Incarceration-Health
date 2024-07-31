@@ -50,8 +50,6 @@ Our Mapplication will be repurposed and continue to be used as a model for our p
 In Progress !
 
 ## Room for Improvement 
-Survey Based
-
 
 To-Do:
 - Due to an overwhelming support, we got interest from other non-male individuals from different schools and because our survey was only tailored to CSULA we could not take their responses and by no means do we want to exclude other voices that need to be empowered. Thus, we would look into expanding our project to the rest of the CSU and eventually the UC sytems.
