@@ -22,18 +22,20 @@ Plotting the Educational Pathways of Formerly Incarcerated Women at CSULA's Proj
 Sankofa - “It is not taboo to go back for what you forgot (or left behind)”
 
 In the spirit of Sankofa, we want to show how women’s education is impacted by incarceration, and how continued higher education gives them the ability to always come back to education. We hope to accomplish this in two ways, one being:
-- We will survey formerly-incarcerated non-males at the California State University-Los Angeles on how their educational paths looked prior to incarceration and how their journeys have changed after joining Project Rebound. As education can be a predictor of the likelihood of incarceration, our survey wants to highlight the first-hand experiences of non-males impacted by the criminal justice system.
+- We will survey formerly incarcerated non-males at the California State University-Los Angeles on how their educational paths looked before incarceration and how their journeys have changed after joining Project Rebound. As education can be a predictor of the likelihood of incarceration, our survey wants to highlight the first-hand experiences of non-males impacted by the criminal justice system.
 
-- We want to share the experiences of non-male, formerly incarcerated individuals empowered through this map by mapping their journey as more than just markers on a map. The markers will display the school they last attended and school grade prior to incarceration. It will also include their personal perspectives on education post-incarceration. 
+- We want to share the experiences of non-male, formerly incarcerated individuals empowered through this map by mapping their journey as more than just markers on a map. The markers will display the school they last attended and school grade prior to incarceration. It will also include their perspectives on education post-incarceration. 
 
 ## Who Is Being Empowered?
-- We hope that our project provides a safe space for the formerly incarcerated women at Cal State LA to express their feelings on education and the injustices they might face. By using an anonymous Google Form survey, we are getting firsthand direct experiences and emotions without fear of judgement or being silenced.
+- We hope our project provides a safe space for the formerly incarcerated women at Cal State LA to express their feelings on education and the injustices they might face. By using an anonymous Google Form survey, we are getting firsthand direct experiences and emotions without fear of judgment or being silenced.
 
 
 ## Technology Used
 Our Mapplication uses web-based tools to both collect and display direct user data via a Google Form survey. To create the website we used HTML, CSS and Javascript which allowed us to livestream our website and add unique features. With this, not only will responses be updated securely and automatically, but the data will always be displayed on a map. 
 
-This map was created using MapLibre in which we are able to visualize each submission as a marker which will allow users and visitors to geogrpahically see where their responses display. Because we have location based questions, all visitors can see exactly what school the user attended last and visualize how they were brought to CSULA, each marker will have a corresponding pop-up with their own user story. 
+This map was created using MapLibre in which we can visualize each submission as a marker which will allow users and visitors to see where their responses display geographically. Because we have location-based questions, all visitors can see exactly what school the user attended last and visualize how they were brought to CSULA, each marker will have a corresponding pop-up with their own user story. 
+
+Our Mapplication will be repurposed and continue to be used as a model for our project's expansion across the CSU and UC systems. This expansion will allow all campuses to empower the voices of their formerly incarcerated women on their educational paths. We will ensure to document exactly how the Website can be used and host Zoom sessions with Project Rebound Directors which will allow them to not only modify the Mapplication, but spread their knowledge to other campuses.
 
 ## Features 
 - Awesome Feature 1
