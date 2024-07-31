@@ -39,12 +39,20 @@ Our Mapplication will be repurposed and continue to be used as a model for our p
 
 ## Features 
 - Unique Buttons
-  -   Each button serves qw 
+  -   Each button serves as a user story with its own personal pop-up. Each pop-up shows their answers to our open ended questions on Education and how each surveyor feels on Rebound Progams.
 
-- Awesome Feature 2 
+- Color Categorized Markers
+  -  We have three different color markers for each response in the colors of Sankofa; red, orange, and yellow. These markers relate to their answer to "Do you feel that your community has been supported in your post-incarceration life?". Dark red being yes, Vibrant red being no, and orange being 'not sure' or an other response. 
 
 ## Screenshots 
+<img width="1332" alt="Screen Shot 2024-07-31 at 2 53 06 PM" src="https://github.com/user-attachments/assets/d79d9cbf-a8d4-4ad7-8990-0e257a21819f">
+- Home page including our Website Title and social issue 
 
+<img width="1207" alt="Screen Shot 2024-07-31 at 2 54 06 PM" src="https://github.com/user-attachments/assets/937d995d-cbb4-473b-a04b-2ed2d310fe5a">
+- Map showing different color markers and unique buttons per each response
+
+<img width="884" alt="Screen Shot 2024-07-31 at 2 55 05 PM" src="https://github.com/user-attachments/assets/ad4b0ea1-a298-4254-a384-da405d1053b4">
+- Example of user story popup 
 
 
 ## Project Status 
@@ -55,7 +63,7 @@ In Progress !
 To-Do:
 - Due to an overwhelming support, we got interest from other non-male individuals from different schools and because our survey was only tailored to CSULA we could not take their responses and by no means do we want to exclude other voices that need to be empowered. Thus, we would look into expanding our project to the rest of the CSU and eventually the UC sytems.
 
-- Add engaging buttons!
+- Add engaging buttons that result in a popup!
 
 
 
