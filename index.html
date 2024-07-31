@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>>The Sankofa-cation Project</title>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="#">
+        <link rel = "stylesheet" href = "styles/style.css">
+
+        <!-- MapLibreGL's css-->
+        <link rel = "stylesheet" href = "https://unpkg.com/maplibre-gl/dist/maplibre-gl.css">
+        
+        <!-- MapLibreGL's JavaScript-->
+        <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+        <!-- Chart.Js's JavaScript-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <a href="index.html"><img id ="headerimg" src = "https://images.squarespace-cdn.com/content/v1/63d6f153b0aec460c2711b3e/e5c907b2-c841-43bb-908e-521f07632682/sankofabird.png"></a>
+                <h1 id = "headertext">THE SANKOFA-CATION PROJECT</h1>
+                <nav id="topnav">
+                    <a class="active" href="index.html">home</a>
+                    <a href= "about.html">about</a>
+                    <a href="contact.html">contact</a>
+                    <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSepmxv7sCl8zhg2yuTQSxXmYtvyeV2dtAnS9trTzQHe4BuX_A/viewform?usp=sf_link">take our survey</a></button>
+                </nav>
+            </div>
+        </header>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h1>What school did you last attend prior to incarceration?</h1>
+            <h3 id = "schoolName">placeholder</h2>
+
+            <h1>What year did you join Project Rebound?</h1>
+            <h3 id = "joinedPR">placeholder</h2>
+
+            <h1>Do you feel your community has been supported in your post-incarceration life?</h1>
+            <h3 id = "communitySupport">placeholder</h2>
+
+            <h1>Describe how your incarceration has impacted your view on education over time, if at all.</h1>
+            <h3 id = "viewOnEdu">placeholder</h2>
+
+        </div>
+
+        <main>
+            <div id="main">
+                <div id = "pieChart">
+                    <h2>Do you feel like enough post-incarcerated women are participating in education programs like Project Rebound?</h2>
+                    <map id = "noSliceMap" name="noSliceMap">
+                        <area onMouseOut="noHoverImageNo()" onMouseOver="hoverImageNo()"  href="hoverNotSure.png" coords="894,1370,1529,1961,1434,2161,1395,2289,1356,2428,1334,2601,1334,2757,1345,2913,1373,3024,1412,3153,1451,3269,1518,3392,1613,3531,1746,3676,1891,3804,2036,3904,2186,3977,2342,4038,2520,4094,2671,4127,2849,4150,3016,4161,3183,4166,3345,4172,3484,4150,3673,4122,3862,4077,4046,4021,4258,3927,4631,3743,4870,3587,5154,3325,5299,3175,5416,3041,5516,2963,5578,2980,5617,3036,5633,3108,5622,3281,5583,3453,5567,3548,5561,3604,5606,3598,5656,3554,5700,3498,5756,3442,5795,3370,5839,3297,5890,3242,5934,3247,5962,3303,5990,3375,5995,3487,5990,3604,5973,3687,5945,3771,5929,3854,5917,3910,5945,3932,5995,3871,6029,3810,6079,3743,6112,3676,6157,3587,6196,3526,6229,3559,6235,3643,6235,3715,6229,3994,6151,4350,6001,4740,5728,5174,5411,5542,5138,5798,4798,6054,4475,6255,4286,6389,4258,6428,4241,6494,4720,7408,4893,7703,5004,7798,5132,7809,5249,7814,5361,7814,5466,7837,5544,7881,5600,7937,5661,7987,5689,8037,5617,8026,5522,8004,5444,7987,5372,7993,5316,8009,5294,8037,5333,8099,5394,8160,5438,8221,5472,8299,5483,8355,5433,8388,5355,8366,5260,8310,5182,8266,5082,8221,4987,8199,4904,8199,4815,8232,4753,8260,4692,8321,4637,8371,4609,8416,4559,8461,4525,8427,4525,8299,4542,8171,4581,8048,4564,7904,4536,7781,4319,7319,4113,6962,3862,6656,3723,6572,3606,6567,3411,6572,3010,6578,2771,6561,2693,6561,2626,6589,2548,6634,2403,6762,2242,6968,2092,7185,1897,7530,1830,7725,1830,7826,1841,7959,1852,8087,1869,8165,1858,8216,1819,8243,1763,8188,1685,8121,1585,8065,1507,8043,1401,8048,1306,8082,1245,8104,1178,8143,1123,8199,1067,8238,1017,8260,961,8238,967,8132,1006,8060,1067,7976,1111,7909,1128,7881,1084,7881,983,7892,894,7904,822,7904,772,7887,811,7848,872,7781,933,7748,1011,7703,1106,7664,1223,7659,1329,7664,1429,7664,1512,7625,1913,6907,2125,6489,2113,6405,2041,6377,1802,6283,1523,6155,1245,5976,1016,5804,732,5509,532,5230,370,4924,253,4651,164,4361,97,3877,81,3487,125,3024,231,2584,393,2167,549,1844,749,1548" shape="poly">
+                    </map>
+                    <img id = "noSlice" src="noHoverNo.png" alt="SankofaChart" width="600" height="700" usemap = "#noSliceMap">
+                    <h4 id = "noStat">5 people</h4>
+
+                    <img id = "yesSlice" src="noHoverYes.png" alt="SankofaChart" width="600" height="700" usemap = "#yesSliceMap">
+                    <map  id = "yesSliceMap" name="yesSliceMap">
+                        <area onMouseOut="noHoverImageYes()" onMouseOver="hoverImageYes()" href="noHoverNotSure.png" coords="3171,95,3305,89,3467,89,3606,95,3762,111,3929,128,4179,189,4285,234,4397,284,4514,334,4636,407,4770,501,4859,585,4942,674,5004,741,5082,869,5154,1008,5204,1164,5238,1298,5282,1443,5316,1560,5382,1721,5421,1832,5449,1922,5488,2022,5494,2111,5460,2156,5416,2161,5343,2133,5288,2089,5232,2061,5182,2022,5132,1983,5082,1944,5037,1916,4959,1860,4892,1816,4775,1771,4686,1738,4592,1721,4469,1699,4308,1665,4185,1632,4090,1571,4012,1526,3923,1454,3829,1365,3706,1264,3545,1153,3411,1103,3283,1064,3160,1030" shape="poly">
+                    </map>
+                    <h4 id = "yesStat">1 person</h4>
+    
+                    <img id = "notSureSlice" src="noHoverNotSure.png" alt="SankofaChart" width="600" height="700" usemap = "#notSureSliceMap">
+                    <map id = "notSureSliceMap" name="notSureSliceMap">
+                        <area onMouseOut="noHoverImageNotSure()" onMouseOver="hoverImageNotSure()" href="noHoverNotSure.png" coords="888,1370,972,1253,1078,1159,1167,1053,1267,964,1373,869,1495,774,1618,674,1807,546,1957,462,2080,401,2219,340,2325,301,2448,256,2548,223,2687,184,2782,167,2882,145,2977,128,3088,117,3171,106,3155,1030,3060,1025,2993,1025,2915,1025,2848,1030,2771,1047,2687,1064,2620,1086,2542,1114,2475,1136,2386,1175,2292,1220,2186,1270,2108,1326,2030,1387,1946,1459,1785,1604,1679,1749,1529,1966" shape="poly">
+                    </map>
+                    <h4 id = "notSureStat">1 person</h4>
+
+                    <section id = "pieChartButtons">
+                        <section id="pieChartYesButton"></section>
+                        <section id="pieChartNoButton"></section>
+                        <section id="pieChartNotSureButton"></section>
+                    </section>
+                </div>
+    
+                <div class = "mapArea">
+                    <section id="map"></section>
+                    <div id="contents">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer">
+            Copyright(2024)
+        </div>
+
+    </body>
+    <script src = "js/initForSurvey.js"></script>
+</html>

@@ -1,0 +1,355 @@
+/* The * selects everything and acts as a global reset to ensure consistency across browsers */
+@font-face {
+    font-family: 'Roboto';
+    src: url('/Users/mymac/Downloads/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: 400; /* Regular weight */
+  }
+  .my-element {
+    font-family: 'Roboto', sans-serif; /* Specify Roboto first, fallback to sans-serif */
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* Sets the overall background and ensures the content fits the screen height */
+html{
+    background-image: linear-gradient(#ffd15c, #ff2100);
+}
+
+html, body {
+    height: auto; 
+    padding: 1rem; 
+}
+
+/* Defines the page layout using a grid */
+body {
+    display: grid; 
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"; 
+    grid-template-rows: auto 1fr auto; /* Adjusted to reflect the simplified structure */
+}
+
+main {
+    border-radius: 30px;
+    display: grid; 
+    grid-template-areas:
+        "portfolio map"
+        "pieChart";
+    grid-template-columns: 1fr 1fr; 
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* Assigns each major section to a part of the grid */
+header { 
+    font-size: 50px;
+    font-stretch:condensed;
+   /*text-shadow: #c57d75 5px 5px;*/
+    color: white; 
+    grid-area: header; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    justify-content: flex-start;
+}
+
+#topnav{
+    font-size: 40px;
+    margin-top: -120px;
+    width: auto;
+    justify-content: flex-end;
+    float: right;
+}
+
+main { 
+    grid-area: main; 
+}
+
+button{
+    border: 1px solid black;
+    background-color: white;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 30px;
+    padding: 15px 32px;
+    margin: 10px;
+}
+
+.portfolio {
+    grid-area: portfolio;
+    display: flex; /* This will make the items inside the portfolio flex items */
+    flex-direction: column; /* This can be row if you want the items to be side by side */
+    justify-content: left; /* This can be flex-start, flex-end, space-between, space-around, space-evenly */
+    align-items: left; /* This can be flex-start, flex-end, stretch, baseline */
+}
+
+div.portfolio{
+    padding: 30px;
+    border-radius: 30px;
+}
+
+div.mapArea{
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.mapArea {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: left; 
+    align-items: left; 
+    width: 100%;
+    padding-top: 10px;
+}
+
+#map { 
+    grid-area: map; 
+    height: 80vh; 
+    width: 100%;
+    margin-top: 30px;
+}
+
+#bio{
+    padding-right: 30px;
+}
+
+footer { 
+    grid-area: footer; 
+    margin: 20px;
+}
+
+img{
+    max-width: 900px; 
+    padding: 30px;
+}
+
+#headerimg{
+    max-width: 140px;
+    padding: 0;
+    float: left;
+    margin: 0 -35px;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
+#headertext{
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin: 0 -35px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+ul{
+    padding-left: 30px;
+    font-size: 30px;
+}
+
+ol{
+    padding-left: 30px;
+    font-size: 30px;
+}
+
+h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: normal;
+    padding: 30px;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+h4{
+    font-weight: normal;
+}
+p{
+    font-size: 30px;
+}
+
+/*side bar*/
+/* The sidebar menu */
+/* The sidebar menu */
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    border: 4px solid;
+}
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+    display:flex;
+    flex-direction: column
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+.marker-equal, .marker-unequal, .marker-unsure {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#legend{
+    background-color: white;
+}
+
+#noSlice{
+    position: absolute; 
+    z-index: 3; 
+    top: 450px; 
+    left: 30%; 
+}
+
+#yesSlice{
+    position: absolute; 
+    z-index: 3; 
+    top: 450px;
+    left: 30%; 
+}
+
+#notSureSlice{
+    position: absolute; 
+    z-index: 3; 
+    top: 450px; 
+    left: 30%; 
+}
+
+#pieChart{
+    grid-area: map; 
+    height: 100vh; 
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: static;
+    display: flex;
+    flex-direction: column;
+}
+
+#pieChartButtons{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 1150px;
+    left: 35%;
+    align-content: flex-end;
+
+}
+
+.marker-Yes, .marker-No, .marker-Unsure {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.marker-Yes{
+    background-color: #ff2100;
+}
+.marker-No{
+    background-color:#b31700
+}
+
+.marker-Unsure {
+    background-color: #FFBB78
+}
+
+#Yes:checked + label {
+    color: #ff2100
+}
+
+#No:checked + label {
+    color: #b31700
+}
+
+#Unsure:checked + label {
+    color: #FFBB78
+}
+
+#yesStat{
+    position: absolute; 
+    z-index: 5; 
+    top: 520px; 
+    left: 52%; 
+}
+
+#noStat{
+    position: absolute; 
+    z-index: 5; 
+    top: 850px; 
+    left: 50%; 
+}
+
+#notSureStat{
+    position: absolute; 
+    z-index: 5; 
+    top: 550px; 
+    left: 40%; 
+}

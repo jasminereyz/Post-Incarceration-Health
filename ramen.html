@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>caitlynn's lit, crazy, cool portfolio</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="#">
+    <link rel = "stylesheet" href = "styles/style.css">
+
+    <!-- MapLibreGL's css-->
+    <link rel = "stylesheet" href = "https://unpkg.com/maplibre-gl/dist/maplibre-gl.css">
+    
+    <!-- MapLibreGL's JavaScript-->
+    <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+          <a href="index.html"><img id ="headerimg" src = "miffy.png"></a>
+          <h1 id = "headertext">caitlynn's lit, crazy, cool portfolio</h1>
+      </div>
+      <nav id="topnav">
+        <a class="active" href="index.html">home</a>
+        <a href= "survey.html">survey</a>
+        <a href="ramen.html">ramen</a>
+        <a href="contact.html">contact</a>
+      </div>
+  </header>
+
+    <main>
+        <div class = "ramenMapArea">
+          <h2>restaurants I have eaten ramen at in san diego</h2>
+          <section id="map"></section>
+          <div id="contents"></div>
+          <ol>
+              <li>harumama</li>
+              <li>raki raki</li>
+              <li>menya ultra</li>
+          </ol>
+    </main>
+	<script src="js/init.js"></script>
+  </body>
+</html>

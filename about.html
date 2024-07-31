@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>caitlynn's lit, crazy, cool portfolio</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- MapLibreGL's css-->
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css">
+
+    <!-- MapLibreGL's JavaScript-->
+    <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a href= "https://docs.google.com/forms/d/e/1FAIpQLSe-aOkMN9PvEcZL8aVFVlNe4W3JcIsLANz5ajdyhvnjzRCDAQ/viewform?embedded=true">
+          <button>Take the survey!</button>                
+      </a>
+      <div>
+        <a href="index.html"><img id="headerimg" src="miffy.png"></a>
+        <h1 id="headertext">caitlynn's lit, crazy, cool portfolio</h1>
+      </div>
+      <nav id="topnav">
+        <a class="active" href="index.html">home</a>
+        <a href= "about.html">about</a>
+        <a href="contact.html">contact</a>
+        <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSepmxv7sCl8zhg2yuTQSxXmYtvyeV2dtAnS9trTzQHe4BuX_A/viewform?usp=sf_link">take our survey</a></button>
+      </nav>
+    </header>
+    <main>
+      <div class="portfolio">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSe-aOkMN9PvEcZL8aVFVlNe4W3JcIsLANz5ajdyhvnjzRCDAQ/viewform?embedded=true"
+          width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+
+      <div class = "mapArea">
+        <h2>do you like albert's puns?</h2>
+        <section id="map"></section>
+        <div id="contents"></div>
+      </div>
+    </main>
+
+    <div id="footer">
+      Copyright(2024)
+    </div>
+  </body>
+  <script src = "js/initForSurvey.js"></script>
+</html>
