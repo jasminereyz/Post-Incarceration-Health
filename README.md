@@ -46,12 +46,20 @@ Our Mapplication will be repurposed and continue to be used as a model for our p
 
 ## Screenshots 
 <img width="1332" alt="Screen Shot 2024-07-31 at 2 53 06 PM" src="https://github.com/user-attachments/assets/d79d9cbf-a8d4-4ad7-8990-0e257a21819f">
-- Home page including our Website Title and social issue 
+
+- Home page including our Website Title and social issue
+
+  
 
 <img width="1207" alt="Screen Shot 2024-07-31 at 2 54 06 PM" src="https://github.com/user-attachments/assets/937d995d-cbb4-473b-a04b-2ed2d310fe5a">
+
 - Map showing different color markers and unique buttons per each response
 
+
+
+
 <img width="884" alt="Screen Shot 2024-07-31 at 2 55 05 PM" src="https://github.com/user-attachments/assets/ad4b0ea1-a298-4254-a384-da405d1053b4">
+
 - Example of user story popup 
 
 
