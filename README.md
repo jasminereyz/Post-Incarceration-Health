@@ -36,6 +36,9 @@ Our Mapplication uses web-based tools to both collect and display direct user da
 This map was created using MapLibre in which we are able to visualize each submission as a marker which will allow users and visitors to geogrpahically see where their responses display. Because we have location based questions, all visitors can see exactly what school the user attended last and visualize how they were brought to CSULA, each marker will have a corresponding pop-up with their own user story. 
 
 ## Features 
+- Awesome Feature 1
+
+- Awesome Feature 2 
 
 ## Screenshots 
 
