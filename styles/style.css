@@ -296,10 +296,11 @@ p{
 
 #pieChartButtons{
     display: flex;
+    background-color: white;
     flex-direction: row;
     position: absolute;
     top: 1150px;
-    left: 35%;
+    left: 42%;
     align-content: flex-end;
 
 }
@@ -314,23 +315,27 @@ p{
     background-color: #ff2100;
 }
 .marker-No{
-    background-color:#b31700
+    background-color:#b31700;
 }
 
 .marker-Unsure {
-    background-color: #FFBB78
+    background-color: #FFBB78;
 }
 
 #Yes:checked + label {
-    color: #ff2100
+    color: #ff2100;
+    font-size: 30px;
+    
 }
 
 #No:checked + label {
-    color: #b31700
+    color: #b31700;
+    font-size: 30px;
 }
 
 #Unsure:checked + label {
-    color: #FFBB78
+    color: #FFBB78;
+    font-size: 30px;
 }
 
 #yesStat{

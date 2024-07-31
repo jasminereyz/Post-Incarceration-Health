@@ -99,9 +99,11 @@ function createButtons(lat, lng, title, name, joinedPR, communitySupport, viewOn
     newButton.setAttribute("lng",lng);
 
     if(title == "Yes"){
-        newButton.style.background= "#ff2100";
+        newButton.style.background= "#FF533A";
     }else if(title == "No"){
         newButton.style.background = "#b31700";
+        newButton.style.color= "white";
+
     }else{
         newButton.style.background = "#FFBB78";
     }
