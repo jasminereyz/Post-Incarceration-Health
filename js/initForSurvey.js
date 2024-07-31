@@ -15,7 +15,7 @@ let categorizedData = [];
 
 const map = new maplibregl.Map({
     container: 'map', // container ID
-    style: 'https://api.maptiler.com/maps/winter-v2/style.json?key=vNy2aoqVADfzjG2R0VzQ', // Your style URL
+    style: 'https://api.maptiler.com/maps/e2e0118b-79a2-4c4e-b331-fa09c59af068/style.json?key=vNy2aoqVADfzjG2R0VzQ', // Your style URL
     center: mapOptions.centerLatLong, // Starting position [lng, lat]
     zoom: mapOptions.zoomRange // Starting zoom level
 });
@@ -51,7 +51,7 @@ function addMarker(data){
         .addTo(map)
     console.log('lat, lng, name, yearJoinedPR,communitySupport, viewOnEdu');
     console.log(lat, lng, name, yearJoinedPR,communitySupport, viewOnEdu);
-    createButtons(lat, lng, name, yearJoinedPR,communitySupport, viewOnEdu)
+    createButtons(lat, lng, title, name, yearJoinedPR,communitySupport, viewOnEdu)
 }
 
 function createFilterUI() {
@@ -64,7 +64,7 @@ function createFilterUI() {
     document.getElementById("pieChartButtons").appendChild(filterGroup);
 
     categories.forEach(category => {
-    createCheckboxForCategory(category, filterGroup);
+        createCheckboxForCategory(category, filterGroup);
     });
 }
 
@@ -92,11 +92,19 @@ function createCheckboxForCategory(category, filterGroup) {
     });
 }
 
-function createButtons(lat, lng, name, joinedPR, communitySupport, viewOnEduShift){
+function createButtons(lat, lng, title, name, joinedPR, communitySupport, viewOnEduShift){
     const newButton = document.createElement("button");
     newButton.innerHTML = name;
     newButton.setAttribute("lat",lat);
     newButton.setAttribute("lng",lng);
+
+    if(title == "Yes"){
+        newButton.style.background= "#ff2100";
+    }else if(title == "No"){
+        newButton.style.background = "#b31700";
+    }else{
+        newButton.style.background = "#FFBB78";
+    }
     newButton.addEventListener('click', function(){
         map.flyTo({
             center: [lng,lat],
