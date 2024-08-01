@@ -105,6 +105,10 @@ div.mapArea{
     border-radius: 30px;
 }
 
+#headerForButtons{
+    margin-top: 20px;
+}
+
 .mapArea {
     display: flex; 
     flex-direction: column; 
@@ -302,6 +306,7 @@ p{
     top: 1150px;
     left: 42%;
     align-content: flex-end;
+    border: 1px solid black;
 
 }
 
